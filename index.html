@@ -6,6 +6,16 @@
     <title>Personal Portfolio</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "DImvUHvxpNk49Qjio",
+      });
+   })();
+</script>
 </head>
 <body>
     
@@ -325,23 +335,22 @@
             <h2 class="contact-title">Contact Me</h2>
             <p class="contact-subtitle">Let's work together on your next project</p>
             
-            <div class="contact-form">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" name="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" name="subject" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="message" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
-            </div>
+            <form id="contactForm">
+        <div class="form-group">
+           <input type="text" name="name" id="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+    <input type="email" name="email" id="email" placeholder="Your Email" required>
+  </div>
+  <div class="form-group">
+    <input type="text" name="subject" id="subject" placeholder="Subject" required>
+  </div>
+  <div class="form-group">
+    <textarea name="message" id="message" placeholder="Your Message" required></textarea>
+  </div>
+  <button type="submit" class="submit-btn">Send Message</button>
+</form>
+
 
             <div class="footer-bottom">
                 <p>&copy; 2025 Mahammad Irshad. All rights reserved.</p>
